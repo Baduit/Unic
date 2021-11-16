@@ -1,5 +1,7 @@
 # Unic
-A library to simulate the "unified call syntax" in C++20 with a slightly different syntax
+A library to simulate the "unified call syntax" in C++20 with a slightly different syntax.
+
+The goal behind this library is to mess around with the concept
 
 # What is the "unified call syntax" ?
 It is a way to call a free a similar way you would call a method. With this library you can do something :
@@ -19,7 +21,7 @@ See :
 It is a header only library, you can use it by:
 * Use CMake and link against it : target_link_libraries(your_target Croissant) (It is defined as an INTERFACE library)
 * Add in your project the single header Croissant.hpp which is in the folder single_header
-* Add the lib directory in your path and include <Croissant/Croissant.hpp>
+* Add the lib directory in your path and include <unic/unic.hpp>
 
 # How does it work ?
 // todo
