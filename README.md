@@ -1,7 +1,7 @@
 # Unic
 A library to simulate the "unified call syntax" in C++20 with a slightly different syntax.
 
-The goal behind this library is to mess around with the concept
+The goal behind this library is to mess around with this concept, it is not intented to be used in a serious project.
 
 # What is the "unified call syntax" ?
 It is a way to call a free a similar way you would call a method. With this library you can do something :
