@@ -1,11 +1,14 @@
 #pragma once
 
+#include <concepts>
+
 namespace unic
 {
 
-inline int add(int a, int b)
+template <typename T, std::invocable<T> Func>
+constexpr auto operator->*(const T& str, Func&& f)
 {
-	return a + b;
+    return f(str);
 }
 
 } // namespace unic
