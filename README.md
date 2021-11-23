@@ -31,7 +31,7 @@ Here's an example :
 int main()
 {
 	using unic::operator->*;
-	constexpr auto find = UNIX_GENERATE_PROXY(std::ranges::find);
+	constexpr auto find = UNIC_GENERATE_PROXY(std::ranges::find);
 	std::vector ints = { 1, 2, 3, 4, 5 };
 
 	auto it = ints->*find(3);
@@ -56,7 +56,7 @@ In this library there is only 2 small things :
 Let's take the following code from the example:
 ```C++
 using unic::operator->*; // 1
-constexpr auto find = UNIX_GENERATE_PROXY(std::ranges::find); // 2
+constexpr auto find = UNIC_GENERATE_PROXY(std::ranges::find); // 2
 std::vector ints = { 1, 2, 3, 4, 5 };
 
 ints->*find(3); // 3

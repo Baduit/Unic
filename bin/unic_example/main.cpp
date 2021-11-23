@@ -8,7 +8,7 @@
 int main()
 {
 	using unic::operator->*;
-	constexpr auto find = UNIX_GENERATE_PROXY(std::ranges::find);
+	constexpr auto find = UNIC_GENERATE_PROXY(std::ranges::find);
 	std::vector ints = { 1, 2, 3, 4, 5 };
 
 	auto it = ints->*find(3);

@@ -35,7 +35,7 @@ constexpr bool my_starts_with(std::string_view str, std::string_view maybe_subst
 
 TEST_CASE("With a proxy for a function")
 {
-	constexpr auto starts_with = UNIX_GENERATE_PROXY(my_starts_with);
+	constexpr auto starts_with = UNIC_GENERATE_PROXY(my_starts_with);
 	constexpr std::string_view str = "lola";
 	{
 		constexpr bool b = str->*starts_with("lol");
@@ -50,7 +50,7 @@ TEST_CASE("With a proxy for a function")
 
 TEST_CASE("With a proxy with an algorithm from the std")
 {
-	constexpr auto find = UNIX_GENERATE_PROXY(std::ranges::find);
+	constexpr auto find = UNIC_GENERATE_PROXY(std::ranges::find);
 	constexpr std::array a = { 1, 2, 3, 4, 5 };
 
 	// Not constexpr yet because std::ranges::find is not consxtpr yet with gcc on my dev env

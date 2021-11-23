@@ -6,7 +6,7 @@
 namespace unic
 {
 
-#define UNIX_GENERATE_PROXY(function)                                                                        \
+#define UNIC_GENERATE_PROXY(function)                                                                        \
 	[]<typename... Args>(Args&&... args)                                                                    \
 	{                                                                                                        \
 		return [&args...]<typename T>(T&& t) { return function(std::forward<T>(t), std::forward<Args>(args)...); }; \
